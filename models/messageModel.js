@@ -11,5 +11,6 @@ const messages = [
   },
 ];
 
-exports.getMessageData = () => messages;
+exports.getMessages = () => messages;
 exports.addMessageData = (text, user) => messages.push({ text: text, user: user, added: new Date() });
+exports.getMessageData = (index) => messages[index];
