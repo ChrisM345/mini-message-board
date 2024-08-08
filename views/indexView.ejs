@@ -8,8 +8,11 @@
   <body>
     <h1>Index Page</h1>
     <a href="/new">Post New Message</a>
-    <% messages.map((message) => { %>
+    <% messages.map((message, index) => { %>
     <p>User: <%= message.user %><br />Message: <%= message.text %><br />Timestamp: <%= message.added %></p>
+    <form action="message/<%= index %>">
+      <input type="submit" value="Open" />
+    </form>
     <% }) %>
   </body>
 </html>
