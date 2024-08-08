@@ -6,6 +6,10 @@
     <title>Index</title>
   </head>
   <body>
-    <h1>Welcome to the Index page</h1>
+    <h1>Index Page</h1>
+    <a href="/new">Post New Message</a>
+    <% messages.map((message) => { %>
+    <p>User: <%= message.user %><br />Message: <%= message.text %><br />Timestamp: <%= message.added %></p>
+    <% }) %>
   </body>
 </html>
