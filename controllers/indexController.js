@@ -1,7 +1,7 @@
-const { getMessageData } = require("../models/messageModel");
+const { getMessages } = require("../models/messageModel");
 
 module.exports = {
   get: (req, res) => {
-    res.render("indexView", { messages: getMessageData() });
+    res.render("indexView", { messages: getMessages() });
   },
 };
