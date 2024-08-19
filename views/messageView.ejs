@@ -6,7 +6,7 @@
     <title>View Message</title>
   </head>
   <body>
-    <h1>Message ID #<%= id %></h1>
-    <p>User: <%= message.user %><br />Message: <%= message.text %><br />Date: <%= message.added %></p>
+    <h1>Message ID #<%= message[0].id %></h1>
+    <p>User: <%= message[0].username %><br />Message: <%= message[0].text %><br />Date: <%= message[0].added %></p>
   </body>
 </html>
